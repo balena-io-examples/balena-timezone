@@ -2,12 +2,6 @@ FROM resin/%%RESIN_MACHINE_NAME%%-debian:latest
 
 MAINTAINER Gergely Imreh <gergely@resin.io>
 
-# Start systemd
-ENV INITSYSTEM on
-
-# Connect to host OS dbus, required
-ENV DBUS_SYSTEM_BUS_ADDRESS 'unix:path=/host_run/dbus/system_bus_socket'
-
 WORKDIR /usr/src/app
 
 COPY . ./
