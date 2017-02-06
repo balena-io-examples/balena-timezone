@@ -1,10 +1,8 @@
 FROM resin/%%RESIN_MACHINE_NAME%%-debian:latest
 
-MAINTAINER Gergely Imreh <gergely@resin.io>
-
 WORKDIR /usr/src/app
 
 COPY . ./
 
-CMD ["bash", "timeset.sh"]
+CMD ["bash", "start.sh"]
 

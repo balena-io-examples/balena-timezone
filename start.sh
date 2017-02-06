@@ -6,6 +6,8 @@ echo "Setting time zone to ${TIMEZONE=UTC}"
 echo "${TIMEZONE}" > /etc/timezone
 dpkg-reconfigure tzdata
 
+# Replace this below with your own application start
+# It just idles in this example.
 while : ; do
     date
     sleep 60
