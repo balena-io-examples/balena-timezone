@@ -1,6 +1,6 @@
-# resin-timezone
+# balena-timezone
 
-All resin.io devices use the UTC timezone by default, for logs, timing, etc. This
+All balena.io devices use the UTC timezone by default, for logs, timing, etc. This
 project gives an minimal example of how to set the device timezone within
 your application if required. It works for Debian-based systems at the moment.
 
