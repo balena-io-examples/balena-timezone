@@ -9,7 +9,7 @@ directory ([see info](https://wiki.debian.org/TimeZoneChanges)), or from
 [Wikipedia](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)
 (the TZ column), and set an environment variable called `TIMEZONE` with that
 value, either in the Dockerfile (hardcoded) by `ENV TIMEZONE <value>` or a new
-variable called `TIMEZONE` in the [dashboard](https://docs.resin.io/management/env-vars/).
+variable called `TIMEZONE` in the [dashboard](https://docs.balena.io/management/env-vars/).
 
 For example set `TIMEZONE` to `Europe/London` to follow the London time, or
 `Asia/Tokyo` if you are in Tokyo, etc.
@@ -19,7 +19,7 @@ start to the marked section in the start script.
 
 ## License
 
-Copyright 2017 Resinio Ltd.
+Copyright 2017-2019 Balena Ltd.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
