@@ -4,6 +4,8 @@ All balena.io devices use the UTC timezone by default, for logs, timing, etc. Th
 project gives an minimal example of how to set the device timezone within
 your application if required. It works for Debian-based systems at the moment.
 
+** NOTE: This project is aimed at setting the container's timezone, as typically that is all that is required. **
+
 To set the timezone, find the name of your timezone in the `/usr/share/zoneinfo`
 directory ([see info](https://wiki.debian.org/TimeZoneChanges)), or from
 [Wikipedia](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)
