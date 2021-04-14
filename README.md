@@ -12,10 +12,10 @@ variable called `TZ` in the [dashboard](https://docs.balena.io/management/env-va
 For example set `TZ` to `Europe/London` to follow the London time, or
 `Asia/Tokyo` if you are in Tokyo, etc. For reference projects, check Inkyshot's [timezone customisation](https://github.com/balenalabs/inkyshot#timezone). 
 
-This will set the container's timezone to what timezone you have chosen. All 
+This will set the container's timezone to whichever timezone you have chosen. All 
 balena.io devices use the UTC timezone by default, for logs, timing, etc. This
 project gives an minimal example of how to set the device timezone within
-your application if required. It works for Debian-based systems at the moment.
+your application if required. This will only work if `tzdata` package is installed in the container image. Refer to [Time Management section](https://www.balena.io/docs/reference/OS/time/) of the balenaOS documentation for more information. 
 
 If you want to use this example in your project, add your application's own
-start to the marked section in the start script.
+start to the marked section in the [start script](./start.sh).
